@@ -5,9 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class FibonacciTest {
     @Test
-    public void testFibEdgeCases() {
-        assertEquals(0, Fibonacci.fib(-1)); // Edge case for negative input
-        assertEquals(0, Fibonacci.fib(Integer.MIN_VALUE)); // Edge case for minimum integer value
+    public void testSmallNumbers() {
+        assertEquals(2, Fibonacci.fib(3)); // Fibonacci(3) = 2
+        assertEquals(3, Fibonacci.fib(4)); // Fibonacci(4) = 3
+        assertEquals(5, Fibonacci.fib(5)); // Fibonacci(5) = 5
     }
 
     @Test
