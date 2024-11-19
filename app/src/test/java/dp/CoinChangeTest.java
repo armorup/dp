@@ -17,8 +17,8 @@ public class CoinChangeTest {
     public void testCoinChangeEdgeCases() {
         assertEquals(-1, CoinChange.coinChange(new int[] { 2, 5 }, 3));
         assertEquals(20, CoinChange.coinChange(new int[] { 1 }, 20));
-        assertEquals(4, CoinChange.coinChange(new int[] { 1, 3, 4 }, 6));
+        assertEquals(2, CoinChange.coinChange(new int[] { 1, 3, 4 }, 6));
         assertEquals(2, CoinChange.coinChange(new int[] { 1, 3, 4 }, 8));
-        assertEquals(3, CoinChange.coinChange(new int[] { 1, 3, 4 }, 7));
+        assertEquals(2, CoinChange.coinChange(new int[] { 1, 3, 4 }, 7));
     }
 }
